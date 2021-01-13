@@ -1,6 +1,7 @@
 body {
     background: #A17A74;
-    color: #B0E0E6;
+    /* color: #66CDAA; */
+    color: #00FA9A;
     margin-top: 5rem;
     background-image: url("ml.jpg");
   }
@@ -38,8 +39,8 @@ body {
   margin-bottom: 20px; */
   }
   .content-section {
-    background:#8B4513;
-    
+    /* background:#8B4513; */
+    background:#663399;
     padding: 10px 20px;
     border: 1px solid #dddddd;
     border-radius: 3px;
@@ -51,6 +52,7 @@ body {
   }
   .article-metadata >a{
     color:#FFF8DC;
+    font-size:20px;
   }
   .article-metadata+h2>a{
     color:#FFF8DC;
@@ -60,7 +62,7 @@ body {
     font-size: 30px;
   }
 #para{
-    color: #B0E0E6;
+    color:#F0F8FF;
     
    font-size: 16px;
   }
@@ -79,6 +81,8 @@ body {
   
   .article-content {
     white-space: pre-line;
+    font-size:18px;
+    color:#00FFFF;
   }
   
   .article-img {
