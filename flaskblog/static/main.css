@@ -71,7 +71,7 @@ body {
   font-size: 20px;
  } 
   .article-title {
-    color: #444444;
+    color: #ffffff;
   }
   
   a.article-title:hover {
@@ -120,4 +120,9 @@ body {
 
   .account-heading {
     font-size: 2.5rem;
+  }
+  .date-posted
+  {
+     color:#f8f868;
+     
   }
