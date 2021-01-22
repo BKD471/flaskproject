@@ -2,33 +2,38 @@
 <html lang="en">
 
 <head>
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+  
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
+     
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='main.css')}}">
-    {% if title %}
-    <title>Flask Blog -{{title}}</title>
-    {% else %}
-    <title>Flask Blog</title>
-    {% endif %}
+   
 </head>
+{% if title %}
+<title>Tech Blog -{{title}}</title>
 
+{% else %}
+<title>Tech Blog</title>
+ 
+{% endif %}
 <body>
     <header class="site-header">
         <!-- #91414b; -->
         <nav class="navbar navbar-expand-md navbar-dark fixed-top" style="background-color:#5b143c">
             <!-- <nav class="navbar navbar-expand-md navbar-dark bg-steel fixed-top"> -->
             <div class="container">
-            <a class="navbar-brand mr-4" href="/">Flask Blog</a>
+            <a class="navbar-brand mr-4" href="/">Tech Blog</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle" aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarToggle">
               <div class="navbar-nav mr-auto">
                 <a class="nav-item nav-link" href="{{url_for('main.home')}}">Home</a>
-                <a class="nav-item nav-link" href="{{url_for('main.about')}}">About</a>
+                <a class="nav-item nav-link" href="{{url_for('main.why')}}">Why?</a>
               </div>
               <!-- Navbar Right Side -->
               <div class="navbar-nav">
@@ -69,7 +74,7 @@
               </header>
               <section class="introduction-section">
                   <h1>Introduction</h1>
-                  <p>To express me in one line,i am a software developer by profession,ML practitioner by passion and a human by religion</p>
+                  <p>To express myself in one line,i am a software developer by profession,ML practitioner by passion and a human by religion</p>
                   <p>I love to make and break things.It gives me an eternal pleasure to understand things from within by making them at first and breaking them again and vice versa</p>
               </section>
               <section class="location-section">
@@ -78,7 +83,7 @@
               </section>
               <section class="questions-section">
                   <h1>Rules and conducts</h1>
-                  <ol class='rule' style="color:#000000">
+                  <ol style="color:#000000;font-size:20px;" >
                     <li>This is purely a tech blog.Do not post anything other than technology or science related things</li>
                     <li>Do not post any political opinion or any other offensive content</li>
                     <li>Always use formal and non-abusive languages</li>
@@ -88,11 +93,11 @@
                 </section>
               
               <footer class="content-footer">
-                  <p>Say hi to me on these social networks:</p>
+                  <p>You can follow me up on:</p>
                   <ul class="social">
-                      <li><a class="css-is-deranged" href="_INSERT_GITHUB_URL_HERE_">GitHub</a></li>
-                      <li><a class="css-is-deranged" href="_INSERT_TWITTER_URL_HERE_">Twitter</a></li>
-                      <li><a class="css-is-deranged" href="_INSERT_GOOGLE+_URL_HERE_">Google+</a></li>
+                      <li><a class="css-is-deranged " href="https://github.com/BKD471" target="_blank">GitHub</a></li>
+                      <li><a class="css-is-deranged " href="https://www.linkedin.com/in/bhaskar-kumar-das-64019a168/" target="_blank">LinkedIn</a></li>
+                      
                   </ul>
                 
               </footer>

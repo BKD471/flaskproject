@@ -195,7 +195,7 @@ body {
 
 .questions-section > h2 {
     font-family: "Gentium Book Basic", Georgia, serif;
-    font-size: 1.2em;
+    font-size: 1.5em;
     font-weight: bold;
     /* Layout */
     margin: 2em 0 1em 0;
@@ -286,7 +286,7 @@ h2 {
 }
 a {
     font-weight: bold;
-    text-align: left;
+    left:-5000px;
     text-decoration: none;
     
     color: #F7EDE1;
