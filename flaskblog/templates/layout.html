@@ -27,18 +27,18 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarToggle">
               <div class="navbar-nav mr-auto">
-                <a class="nav-item nav-link" href="{{url_for('home')}}">Home</a>
-                <a class="nav-item nav-link" href="{{url_for('about')}}">About</a>
+                <a class="nav-item nav-link" href="{{url_for('main.home')}}">Home</a>
+                <a class="nav-item nav-link" href="{{url_for('main.about')}}">About</a>
               </div>
               <!-- Navbar Right Side -->
               <div class="navbar-nav">
                 {% if current_user.is_authenticated %}
-                <a class="nav-item nav-link" href="{{url_for('new_post')}}">New Post</a>
-                <a class="nav-item nav-link" href="{{url_for('account')}}">Account</a>   
-                <a class="nav-item nav-link" href="{{url_for('logout')}}">Logout</a>
+                <a class="nav-item nav-link" href="{{url_for('posts.new_post')}}">New Post</a>
+                <a class="nav-item nav-link" href="{{url_for('users.account')}}">Account</a>   
+                <a class="nav-item nav-link" href="{{url_for('users.logout')}}">Logout</a>
                 {% else %}
-                <a class="nav-item nav-link" href="{{url_for('login')}}">Login</a>
-                <a class="nav-item nav-link" href="{{url_for('registration')}}">Register</a>
+                <a class="nav-item nav-link" href="{{url_for('users.login')}}">Login</a>
+                <a class="nav-item nav-link" href="{{url_for('users.registration')}}">Register</a>
                  {% endif %}
               </div>
             </div>
@@ -61,17 +61,43 @@
             {% block content %}{% endblock %}
           </div>
           <div class="col-md-4">
-            <div class="side-content-section">
-              <h3 id='sideheader'>Our Sidebar</h3>
-              <p class='text-muted'><span id='para'>You can put any information here you'd like.</span>
-                <ul class="list-group">
-                  <li class="list-group-item list-group-item-light">Latest Posts</li>
-                  <li class="list-group-item list-group-item-light">Announcements</li>
-                  <li class="list-group-item list-group-item-light">Calendars</li>
-                  <li class="list-group-item list-group-item-light">etc</li>
-                </ul>
-              </p>
+             <div class="side-content-section">
+              <header class='masthead'>
+                <p class='Greet'>Hi I'm</p>
+                <h5 class='my-name'>Bhaskar</h5>
+                <p class='Greet'>owner of this blog</p>
+              </header>
+              <section class="introduction-section">
+                  <h1>Introduction</h1>
+                  <p>To express me in one line,i am a software developer by profession,ML practitioner by passion and a human by religion</p>
+                  <p>I love to make and break things.It gives me an eternal pleasure to understand things from within by making them at first and breaking them again and vice versa</p>
+              </section>
+              <section class="location-section">
+                  <h1>Where I'm From</h1>
+                  <p>I'm from Kolkata,India </p>
+              </section>
+              <section class="questions-section">
+                  <h1>Rules and conducts</h1>
+                  <ol class='rule' style="color:#000000">
+                    <li>This is purely a tech blog.Do not post anything other than technology or science related things</li>
+                    <li>Do not post any political opinion or any other offensive content</li>
+                    <li>Always use formal and non-abusive languages</li>
+                    <li>In case of any misconduct, authority holds right to terminate your account</li>
+
+                  </ol>
+                </section>
+              
+              <footer class="content-footer">
+                  <p>Say hi to me on these social networks:</p>
+                  <ul class="social">
+                      <li><a class="css-is-deranged" href="_INSERT_GITHUB_URL_HERE_">GitHub</a></li>
+                      <li><a class="css-is-deranged" href="_INSERT_TWITTER_URL_HERE_">Twitter</a></li>
+                      <li><a class="css-is-deranged" href="_INSERT_GOOGLE+_URL_HERE_">Google+</a></li>
+                  </ul>
+                
+              </footer>
             </div>
+            
           </div>
         </div>
       </main>
